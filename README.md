@@ -26,27 +26,21 @@
 3. EmergencyEvent - управляет данными о чрезвычайных ситуациях.
 4. Recipient - управляет получателями экстренных оповещений.
    
-Команды:
-1. CreateEventCommand — создание нового чрезвычайного события.
-2. UpdateEventCommand — обновление информации о событии.
-3. LocationToEventCommand — назначение местоположения для чрезвычайного события.
-4. ChannelToEventCommand — назначение канала связи для уведомления.
-5. CreateNotificationCommand — создание нового уведомления.
-6. SendNotificationCommand — отправка уведомления пользователю.
-7. UpdateNotificationStatusCommand — обновление статуса уведомления.
-8. RegisterRecipientCommand — регистрация получателя уведомлений.
-9. UpdateRecipientCommand — обновление данных получателя.
+Команды (пока столько):
+1. createEvent — создание нового чрезвычайного события.
+2. updateEvent — обновление информации о событии.
+3. assignLocation — назначение местоположения для чрезвычайного события.
+4. listEvents — вывести все события ЧС.
+5. listNotifications — вывести все уведомления.
+6. listRecipients — вывести всех получаетелей.
 
 События:
 1. EventCreated — событие создано.
 2. EventUpdated — информация о событии обновлена.
 3. EventLocationAssigned — местоположение события назначено.
-4. EventChannelAssigned — канал связи для события назначен.
-5. NotificationCreated — уведомление о ЧС создано.
-6. NotificationSent — уведомление отправлено.
-7. NotificationStatusUpdated — статус уведомления изменен.
-8. RecipientRegistered — получатель уведомлений зарегистрирован.
-9. RecipientUpdated — информация о получателе обновлена.
+4. EventsListed — выведены все события ЧС.
+5. NotificationsListed — выведены все уведомления.
+6. RecipientsListed — выведены всех получаетелей.
 
 ## Инструментарий
 Python, VS Code
