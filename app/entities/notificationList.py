@@ -10,7 +10,7 @@ class NotificationList:
         if notification_id in self.notifications:
             raise ValueError("Уведомление с таким ID уже существует.")
         self.notifications[notification_id] = Notification(notification_id, status, text, time)
-    
+
     def send_notification(self, notification_id):
         """Отправка уведомления пользователю."""
         if notification_id not in self.notifications:
@@ -18,7 +18,7 @@ class NotificationList:
         notification = self.notifications[notification_id]
         print(f"Отправка уведомления: {notification.text} ")
         notification.status = "sent"
-    
+
     def update_notification_status(self, notification_id, status):
         """Обновление статуса уведомления."""
         if notification_id not in self.notifications:

@@ -5,19 +5,19 @@ class EventList:
     def __init__(self):
         self.events = {}
 
-    def create_event(self, event_id, type, danger_level):
+    def create_event(self, event_id, event_type, danger_level):
         """Создание нового ЧС."""
         if event_id in self.events:
             raise ValueError("Событие с таким ID уже существует.")
-        self.events[event_id] = Event(event_id, type, danger_level, None)
-    
+        self.events[event_id] = Event(event_id, event_type, danger_level, None)
+
     def update_event(self, event_id, event_type=None, danger_level=None):
         """Обновление информации о ЧС."""
         if event_id not in self.events:
             raise ValueError("Событие не найдено.")
         event = self.events[event_id]
         if event_type:
-            event.type = event_type
+            event.event_type = event_type
         if danger_level:
             event.danger_level = danger_level
 

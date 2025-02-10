@@ -1,4 +1,3 @@
-import sys
 from app.entities.eventList import EventList
 from app.entities.notificationList import NotificationList
 from app.entities.recipientList import RecipientList

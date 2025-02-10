@@ -10,7 +10,7 @@ class RecipientList:
         if recipient_id in self.recipients:
             raise ValueError("Получатель с таким ID уже зарегистрирован.")
         self.recipients[recipient_id] = Recipient(recipient_id, location, contact)
-    
+
     def update_recipient(self, recipient_id, location=None, contact=None):
         """Обновление данных получателя."""
         if recipient_id not in self.recipients:
